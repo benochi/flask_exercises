@@ -10,7 +10,7 @@ def add(a, b):
     """Add a and b."""
     a = int(request.args.get('a'))
     b = int(request.args.get('b'))
-    sum = add(a + b)
+    sum = add(a, b)
 
     return str(sum)
 
@@ -28,7 +28,7 @@ def mult(a, b):
     """Multiply a and b."""
     a = int(request.args.get('a'))
     b = int(request.args.get('b'))
-    total = mult(a * b)
+    total = mult(a, b)
 
     return str(total)
 
@@ -37,7 +37,7 @@ def div(a, b):
     """Divide a by b."""
     a = int(request.args.get('a'))
     b = int(request.args.get('b'))
-    total = div(a / b)
+    total = div(a, b)
 
     return str(total)
 
