@@ -16,7 +16,7 @@ def add(a, b):
 
 @app.route('/sub')
 def sub(a, b):
-    """Substract b from a."""
+    """Subtract b from a."""
     a = int(request.args.get('a'))
     b = int(request.args.get('b'))
     sum = sub(a, b)
